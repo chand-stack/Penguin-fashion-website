@@ -6,28 +6,39 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
     <title>Penguin Fashion</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'background-primary':'#FFFBF0',
+              }
+            }
+          }
+        }
+      </script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+      <style>
+        .font-bebas{font-family: 'Bebas Neue', sans-serif;}
+      </style>
 </head>
 <body>
 <header>
-    <nav>
-        <div class="navbar bg-base-100">
+    <nav class="max-w-screen-xl mx-auto bg-background-primary">
+        <div class="navbar">
             <div class="flex-1">
-              <a class="btn btn-ghost normal-case text-xl">Penguin Fashion</a>
+              <a class="btn btn-ghost normal-case text-xl font-bold"><span class="text-green-500">Penguin</span> Fashion</a>
             </div>
             <div class="flex-none">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Link</a></li>
-                <li>
-                  <details>
-                    <summary>
-                      Parent
-                    </summary>
-                    <ul class="p-2 bg-base-100">
-                      <li><a>Link 1</a></li>
-                      <li><a>Link 2</a></li>
-                    </ul>
-                  </details>
-                </li>
+              <ul class="flex gap-6 font-medium">
+                <li><a>Home</a></li>
+                <li><a>Product</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href=""></a>Contact us</li>
+                
               </ul>
             </div>
           </div>
